@@ -1,6 +1,6 @@
 ﻿namespace CSDCustomReplace
 {
-    partial class listGroup
+    partial class UIPanelSub
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,32 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxSub = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // comboBoxSub
             // 
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1280, 100);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.comboBoxSub.FormattingEnabled = true;
+            this.comboBoxSub.Location = new System.Drawing.Point(117, 17);
+            this.comboBoxSub.Name = "comboBoxSub";
+            this.comboBoxSub.Size = new System.Drawing.Size(353, 32);
+            this.comboBoxSub.TabIndex = 0;
             // 
-            // listGroup
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(486, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 34);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "移除子项";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // UIPanelSub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
-            this.Name = "listGroup";
-            this.Size = new System.Drawing.Size(1280, 100);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBoxSub);
+            this.Name = "UIPanelSub";
+            this.Size = new System.Drawing.Size(1274, 70);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private GroupBox groupBox1;
+        private ComboBox comboBoxSub;
+        private Button button1;
     }
 }

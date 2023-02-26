@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSDCustomReplace
 {
-    public partial class listGroup : UserControl
+    public partial class UIPanelSub : UserControl
     {
-        public listGroup()
+        public UIPanelSub()
         {
             InitializeComponent();
         }
