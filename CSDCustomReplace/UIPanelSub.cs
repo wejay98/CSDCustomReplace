@@ -16,5 +16,13 @@ namespace CSDCustomReplace
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible= false;
+            UIListGroup uIListGroup = new UIListGroup();
+            uIListGroup.RemoveItem();
+            this.Controls.Remove(this);
+        }
     }
 }

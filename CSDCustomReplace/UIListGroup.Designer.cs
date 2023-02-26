@@ -30,9 +30,9 @@
         {
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.panelHead = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox.SuspendLayout();
             this.panelHead.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,26 @@
             this.panelHead.Size = new System.Drawing.Size(1274, 71);
             this.panelHead.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1132, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 34);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "移除";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(307, 19);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(112, 34);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "添加项";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -70,30 +90,12 @@
             this.comboBox1.Size = new System.Drawing.Size(271, 32);
             this.comboBox1.TabIndex = 0;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(307, 19);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(112, 34);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "添加项";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1132, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "移除";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // listGroup
+            // UIListGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox);
-            this.Name = "listGroup";
+            this.Name = "UIListGroup";
             this.Size = new System.Drawing.Size(1280, 100);
             this.groupBox.ResumeLayout(false);
             this.panelHead.ResumeLayout(false);
